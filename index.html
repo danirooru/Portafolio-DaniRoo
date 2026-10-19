@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6e8d9">
+  <meta name="description" content="Portafolio de Daniela Róo Rubí, diseñadora gráfica digital. Identidad, empaque, ilustración, modelado 3D, campañas y UX/UI.">
+  <title>Daniela Róo Rubí · Diseñadora Gráfica Digital</title>
+  <link rel="icon" href="assets/estrellados.webp" type="image/webp">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css?v=20261019m">
+  <script src="projects.js?v=20261019m" defer></script>
+  <script src="script.js?v=20261019m" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <a class="logo" href="#inicio" aria-label="Daniela Róo, inicio"><img src="assets/estrellados.webp" width="40" height="40" alt="">Daniela Róo</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menú <span aria-hidden="true">☰</span></button>
+  <nav id="navigation" aria-label="Navegación principal">
+    <a href="#inicio" aria-current="location">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#estudios">Estudios</a><a href="#experiencia">Experiencia</a><a href="#habilidades">Habilidades</a><a href="#contacto">Contacto</a>
+  </nav>
+  <button class="cv-button header-cv" aria-haspopup="dialog">Descargar CV <span aria-hidden="true">↗</span></button>
+</header>
+<main id="contenido">
+  <section id="inicio" class="hero section-shell" aria-labelledby="hero-title">
+    <div class="hero-topline"><span>DISEÑO GRÁFICO DIGITAL</span><button class="motion-toggle" aria-pressed="false">Pausar animaciones <span aria-hidden="true">Ⅱ</span></button></div>
+    <h1 id="hero-title" class="echo hero-title" data-text="PORTAFOLIO" aria-label="PORTAFOLIO">PORTAFOLIO</h1>
+    <img class="hero-star star-a floating" src="assets/estrellauno.webp" alt="" width="700" height="571">
+    <img class="hero-star star-b floating" src="assets/estrellados.webp" alt="" width="700" height="670">
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <p class="greeting">Hola, soy</p>
+        <h2>Daniela<br> Róo Rubí</h2>
+        <span class="tag pink-tag">Diseñadora Gráfica Digital</span>
+        <p class="hero-value">Convierto tus ideas en mensajes visuales que se entienden y se recuerdan.</p>
+        <div class="actions"><a href="#proyectos" class="button primary">Ver proyectos <span aria-hidden="true">↗</span><img class="button-star" src="assets/estrellados.webp" alt=""></a><button class="text-button cv-button" aria-haspopup="dialog">Descargar CV <span aria-hidden="true">↓</span></button></div>
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="assets/mifoto.webp" alt="Daniela Róo Rubí con suéter amarillo y una estrella detrás" width="838" height="1100" fetchpriority="high">
+        <div class="seal" aria-label="Diseño con alma"><span>DISEÑO<br>CON<br>ALMA</span><img src="assets/estrellados.webp" alt="" width="48" height="48"></div>
+      </div>
+    </div>
+  </section>
+  <div class="ribbon" aria-label="Identidad, empaque, ilustraciones, modelado 3D y UX/UI"><div class="ribbon-track" aria-hidden="true"><span class="ribbon-set"><span class="ribbon-item">IDENTIDAD</span><span class="ribbon-item">EMPAQUE</span><span class="ribbon-item">ILUSTRACIONES</span><span class="ribbon-item">MODELADO 3D</span><span class="ribbon-item">UX/UI</span></span><span class="ribbon-set"><span class="ribbon-item">IDENTIDAD</span><span class="ribbon-item">EMPAQUE</span><span class="ribbon-item">ILUSTRACIONES</span><span class="ribbon-item">MODELADO 3D</span><span class="ribbon-item">UX/UI</span></span></div></div>
+  <section id="sobre-mi" class="section-shell about section-space" aria-labelledby="about-title">
+    <div class="section-heading"><span class="eyebrow">01 · SOBRE MÍ</span><h2 class="echo" data-text="CONÓCEME MÁS" id="about-title" aria-label="CONÓCEME MÁS">CONÓCEME MÁS</h2></div>
+    <div class="about-panel"><div class="about-intro"><span>Curiosa por naturaleza.</span><h3>Ideas que<br>conectan.</h3><img src="assets/estrellados.webp" alt="" width="140" height="134" class="floating"></div><div class="about-body"><p>Soy Daniela Róo, tengo 21 años y soy de la CDMX. Curso el séptimo semestre de la Licenciatura en Diseño Gráfico Digital.</p><p>Me apasiona crear mensajes visuales que se adapten a cada cliente y ayuden a resolver problemas reales. Disfruto explorar el UX, la animación y el modelado 3D.</p><p>Fuera del diseño, me encuentras en el cine —sobre todo si es de terror— o escuchando música.</p><div class="tags"><span class="tag yellow-tag">CDMX</span><span class="tag yellow-tag">Cine de terror</span><span class="tag yellow-tag">Música</span></div></div></div>
+  </section>
+  <section id="proyectos" class="section-shell projects section-space" aria-labelledby="projects-title">
+    <div class="section-heading projects-heading"><div><span class="eyebrow">02 · TRABAJO SELECCIONADO</span><h2 class="echo" id="projects-title" data-text="MIS PROYECTOS" aria-label="MIS PROYECTOS">MIS PROYECTOS</h2></div><p>Distintas ideas.<br>Una mirada propia.</p></div>
+    <div class="filters" role="group" aria-label="Filtrar proyectos por categoría"></div>
+    <p id="project-count" class="project-count" aria-live="polite" aria-atomic="true"></p>
+    <div id="project-grid" class="project-grid"></div>
+    <noscript><p>Activa JavaScript para explorar los proyectos y sus galerías. También puedes visitar <a href="https://www.behance.net/danielarooru">mi perfil de Behance</a>.</p></noscript>
+    <p class="gallery-note">Cada proyecto tiene una historia. Haz clic para descubrirla. <span aria-hidden="true">↗</span></p>
+  </section>
+  <section id="estudios" class="section-shell section-space" aria-labelledby="education-title"><div class="section-heading"><span class="eyebrow">03 · FORMACIÓN</span><h2 id="education-title" class="echo" data-text="LO QUE ME FORMA" aria-label="LO QUE ME FORMA">LO QUE ME FORMA</h2></div><div class="education-grid">
+    <article class="education-card"><img src="assets/estrellados.webp" alt="" width="50" height="48"><span class="small-label">EN CURSO · 7.º SEMESTRE</span><h3>Diseño Gráfico Digital</h3><p>Licenciatura<br>Universidad La Salle</p></article>
+    <article class="education-card"><img src="assets/estrellados.webp" alt="" width="50" height="48"><span class="small-label">ÁREA DE PROFUNDIZACIÓN</span><h3>Experiencia e interfaz</h3><p>UX/UI<br>Diseño centrado en las personas</p></article>
+    <article class="education-card"><img src="assets/estrellados.webp" alt="" width="50" height="48"><span class="small-label">IDIOMAS</span><h3>Más formas de conectar</h3><p>Español · Lengua nativa<br>Inglés · Nivel alto</p></article>
+  </div></section>
+  <section id="experiencia" class="section-shell section-space" aria-labelledby="experience-title"><div class="section-heading"><span class="eyebrow">04 · EXPERIENCIA</span><h2 id="experience-title" class="echo" data-text="EXPERIENCIAS QUE SUMAN" aria-label="EXPERIENCIAS QUE SUMAN">EXPERIENCIAS QUE SUMAN</h2></div><div class="experience-list">
+    <article class="experience-card"><span class="experience-number" aria-hidden="true">01</span><div><h3>Animadora de eventos infantiles</h3><p>Juegos y talleres para niños pequeños. Me coordino con otros animadores para llevar adelante las actividades y crear una experiencia divertida.</p><div class="tags"><span class="tag yellow-tag">Trabajo en equipo</span><span class="tag yellow-tag">Coordinación</span></div></div><span class="experience-date">Actualidad</span></article>
+    <article class="experience-card"><span class="experience-number" aria-hidden="true">02</span><div><h3>Servicio social</h3><p>Proyecto editorial sobre la música sonidera.</p><div class="tags"><span class="tag yellow-tag">Diseño editorial</span></div></div></article>
+  </div></section>
+  <section id="habilidades" class="section-shell section-space" aria-labelledby="skills-title"><div class="skills-panel"><div class="section-heading"><span class="eyebrow">05 · HABILIDADES</span><h2 id="skills-title" class="echo" data-text="LO QUE PUEDO APORTAR" aria-label="LO QUE PUEDO APORTAR">LO QUE PUEDO APORTAR</h2></div><p class="skills-lead">Herramientas para imaginar. Habilidades para resolver.</p><ul class="software-list" aria-label="Programas"><li><span>Ai</span>Illustrator</li><li><span>Ps</span>Photoshop</li><li><span>Id</span>InDesign</li><li><span>Ae</span>After Effects</li><li><span>Pr</span>Procreate</li><li><span>Ma</span>Maya</li></ul><ul class="skill-list"><li>Diseño UX/UI</li><li>Animación</li><li>Modelado 3D</li><li>Identidad de marca, empaque, ilustración y campañas</li><li>Trabajo en equipo</li><li>Inglés: nivel alto</li></ul></div></section>
+  <section id="contacto" class="section-shell section-space" aria-labelledby="contact-title"><div class="contact-panel"><span class="eyebrow">06 · CONTACTO</span><h2 id="contact-title" class="echo" data-text="HAGAMOS QUE&#10;TU IDEA HABLE" aria-label="HAGAMOS QUE TU IDEA HABLE">HAGAMOS QUE<br>TU IDEA HABLE</h2><p>Hay mucho más por crear.<br>Conoce más de mi trabajo en Behance.</p><address class="contact-details"><a href="mailto:danielaroorubi@gmail.com"><span class="contact-label">ESCRÍBEME</span><span>danielaroorubi@gmail.com</span><span aria-hidden="true">↗</span></a><a href="tel:+525571939185"><span class="contact-label">LLÁMAME</span><span>55 7193 9185</span><span aria-hidden="true">↗</span></a></address><div class="actions"><a class="button primary" href="https://www.behance.net/danielarooru" target="_blank" rel="noopener noreferrer" aria-label="Ver mi Behance (abre en otra pestaña)"><span aria-hidden="true">Bē</span> Ver mi Behance <span aria-hidden="true">↗</span><img class="button-star" src="assets/estrellados.webp" alt=""></a><button class="text-button cv-button" aria-haspopup="dialog">Descargar CV <span aria-hidden="true">↓</span></button></div><img class="contact-star floating" src="assets/estrellauno.webp" alt="" width="700" height="571"></div></section>
+</main>
+<footer class="section-shell"><div><a class="logo" href="#inicio"><img src="assets/estrellados.webp" alt="" width="40" height="40">Daniela Róo Rubí</a><p>Diseñadora Gráfica Digital</p></div><p>Pienso cada detalle para que tu idea<br>hable por sí sola.</p><a class="footer-behance" href="https://www.behance.net/danielarooru" target="_blank" rel="noopener noreferrer" aria-label="Behance de Daniela (abre en otra pestaña)">Bē <span aria-hidden="true">↗</span></a></footer>
+<dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><span>UNA IDEA, TODOS SUS DETALLES</span><button class="close-dialog" aria-label="Cerrar proyecto">Cerrar <span aria-hidden="true">×</span></button></div><div id="dialog-content"></div></dialog>
+<dialog class="cv-dialog" id="cv-dialog" aria-labelledby="cv-title"><button class="close-cv" aria-label="Cerrar aviso">×</button><span class="eyebrow">EN PREPARACIÓN</span><h2 id="cv-title">Mi CV, muy pronto.</h2><p>El archivo PDF todavía no está disponible. Mientras tanto, puedes explorar mi formación, experiencia y proyectos en esta página.</p><button class="button primary close-cv">Seguir explorando</button></dialog>
+<span class="custom-cursor" aria-hidden="true"></span><div class="click-effects" aria-hidden="true"></div>
+</body>
+</html>
